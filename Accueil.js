@@ -2,59 +2,62 @@ import React from "react";
 
 export default () => (
   <div>
-    <div
-      css={`
-        color: white;
-        text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-        width: 800px;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        height: 80vh;
-        header,
-        #phone {
-          width: 50%;
-        }
-        h1 {
-          font-size: 400%;
+    <div css="height: 100vh">
+      <div
+        css={`
+          color: white;
+          text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+          width: 800px;
+          margin: 0 auto;
+          display: flex;
+          align-items: center;
+          height: 80vh;
+          header,
+          #phone {
+            width: 50%;
+          }
+          h1 {
+            font-size: 400%;
+            font-weight: 600;
+          }
+          p {
+            font-size: 150%;
+          }
+        `}
+      >
+        <header>
+          <h1>Kilomèt.re</h1>
+          <p>
+            L'appli qui
+            <br /> <strong>collecte vos données</strong> <br />
+            de déplacement.
+          </p>
+        </header>
+        <Phone />
+      </div>
+      <a
+        href="#quoi"
+        css={`
+          display: block;
+          background: #ffffff4f;
+          border: 3px solid #333;
+          border-radius: 0.3rem;
+          width: 7rem;
+          text-align: center;
+          cursor: pointer;
+          text-decoration: none;
+          padding: 0.2rem 0.6rem;
+          font-size: 130%;
+          color: black;
+          text-transform: uppercase;
           font-weight: 600;
-        }
-        p {
-          font-size: 150%;
-        }
-      `}
-    >
-      <header>
-        <h1>Mov</h1>
-        <p>
-          L'appli qui
-          <br /> <strong>collecte vos données</strong> <br />
-          de déplacement.
-        </p>
-      </header>
-      <Phone />
+          margin: 0 auto;
+        `}
+      >
+        Quoi 😲 ?
+      </a>
     </div>
-    <a
-      href="#quoi"
-      css={`
-        display: block;
-        background: #ffffff4f;
-        border: 3px solid #333;
-        border-radius: 0.3rem;
-        width: 7rem;
-        text-align: center;
-        cursor: pointer;
-        text-decoration: none;
-        padding: 0.2rem 0.6rem;
-        font-size: 130%;
-        color: black;
-        text-transform: uppercase;
-        font-weight: 600;
-        margin: 0 auto;
-      `}
-    >
-      Quoi 😲 ?
-    </a>
+    <Pourquoi />
   </div>
 );
 
@@ -221,5 +224,92 @@ let Phone = () => (
       <div id="ltbutton"></div>
       <div id="lbbutton"></div>
     </div>
+  </div>
+);
+
+let Pourquoi = () => (
+  <div
+    id="quoi"
+    css={`
+      width: 50rem;
+      background: white;
+      padding: 0.3rem 2rem;
+      border-radius: 1rem;
+      margin: 0 auto;
+      box-shadow: 0 1px 6px rgba(1, 11, 22, 0.77), 0 1px 2px rgba(0, 2, 5, 0.73);
+    `}
+  >
+    <h2>Participez à la reconstruction du service public du transport.</h2>
+    <p>Nous sommes au beau milieu de plusieurs crises graves. </p>
+    <ul>
+      <li>
+        📢 la dépendance à la voiture n’a jamais été aussi subie, et
+        l’approvisionnement en essence si incertain.{" "}
+      </li>
+      <li> 🌍 la transition écologique est au point mort.</li>{" "}
+      <li>💨 les villes sont polluées et stressantes.</li>
+    </ul>
+    <p>
+      {" "}
+      Une solution à tous ces problèmes ? Le réseau de transport public n'est
+      pas au niveau et les infrastructures doivent faire leur révolution.
+    </p>
+    <p>
+      {" "}
+      Aidez les collectivités à mieux comprendre vos déplacements du quotidien,
+      pour que les nouvelles pistes cyclables, lignes de bus, petites lignes de
+      train, nouvelles routes, bornes de recharge électrique, places de
+      stationnement, et l’aménagement urbain en général ne vous laissent plus de
+      côté.
+    </p>
+    <h2>Comment ça marche ?</h2>
+    <p>
+      Installez l'application, et vivez votre vie... et rien de plus !
+      Kilomèt.re enregistre et détecte vos déplacements à pied, en voiture, à
+      vélo, en bus, jour après jour,
+      <strong> mais ils ne seront pas partagés</strong>.
+    </p>
+
+    <p>
+      Puis si vous le voulez, partagez de façon totalement anonyme vos données
+      de déplacement.
+      <ul>
+        <li>
+          🚗 Marre de toujours faire le même trajet en voiture ? Demandez un bus
+          ou un train.
+        </li>
+        <li>
+          🚌 Vous prenez les transports en commun, mais ils sont lents,
+          irréguliers et ne passent pas au bon endroit ? Aidez-nous à mieux
+          comprendre vos déplacements d'un point A à un point B.
+        </li>
+        <li>
+          🚲 Fier de sortir le vélo, mais pas satisfait par les infrastructures
+          cyclables ? Signalez votre trajet !
+        </li>
+        <li>
+          Interessé uniquement par vos 📊 statistiques de déplacement ? Pas de
+          problème, rien ne quittera votre téléphone.
+        </li>
+      </ul>
+    </p>
+    <h2>Privée par défaut</h2>
+    <p>
+      🕵️ Rien ne sort de votre téléphone sans votre accord. Un déplacement
+      particulier vous embarasse ? Pas de souci, effacez-le. Vous êtes le seul à
+      partager vos données dans votre quartier ? Elles resteront au chaud.
+    </p>
+    <p>
+      Si je les partage, que ferez-vous de mes données ? Elles seront simplement
+      publiées de façon anonyme.{" "}
+    </p>
+    <p>
+      Pourquoi devrais-je vous faire confiance ? Le code de l'application est
+      entièrement libre, tout le monde peut vérifier qu'elle ne collecte pas les
+      données autorisation.
+    </p>
+    <h2>Autres questions</h2>
+    <p>L'appli va-t-elle plomber ma batterie ?</p>
+    <p>Données pas représentatives.</p>
   </div>
 );
