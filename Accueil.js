@@ -7,11 +7,11 @@ export default () => (
         css={`
           color: white;
           text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-          width: 800px;
+          max-width: 860px;
           margin: 0 auto;
+          padding-left: 0.3rem;
           display: flex;
           align-items: center;
-          height: 80vh;
           header,
           #phone {
             width: 50%;
@@ -19,14 +19,23 @@ export default () => (
           h1 {
             font-size: 400%;
             font-weight: 600;
+            margin: 1.6rem 0;
           }
           p {
             font-size: 150%;
           }
+
+          @media (max-width: 800px) {
+            flex-wrap: wrap;
+            header,
+            #phone {
+              width: 100%;
+            }
+          }
         `}
       >
         <header>
-          <h1>Kilomèt.re</h1>
+          <h1>Kilomètre</h1>
           <p>
             L'appli qui
             <br /> <strong>collecte vos données</strong> <br />
@@ -51,7 +60,7 @@ export default () => (
           color: black;
           text-transform: uppercase;
           font-weight: 600;
-          margin: 0 auto;
+          margin: 1.6rem auto;
         `}
       >
         Quoi 😲 ?
@@ -231,15 +240,19 @@ let Pourquoi = () => (
   <div
     id="quoi"
     css={`
-      width: 50rem;
+      max-width: 50rem;
       background: white;
-      padding: 0.3rem 2rem;
+      padding: 0.3rem 1rem;
       border-radius: 1rem;
       margin: 0 auto;
       box-shadow: 0 1px 6px rgba(1, 11, 22, 0.77), 0 1px 2px rgba(0, 2, 5, 0.73);
+      ul {
+        list-style-type: none;
+        padding-left: 1rem;
+      }
     `}
   >
-    <h2>Participez à la reconstruction du service public du transport.</h2>
+    <h2>Reconstruire le service public du transport</h2>
     <p>Nous sommes au beau milieu de plusieurs crises graves. </p>
     <ul>
       <li>
@@ -273,26 +286,26 @@ let Pourquoi = () => (
     <p>
       Puis si vous le voulez, partagez de façon totalement anonyme vos données
       de déplacement.
-      <ul>
-        <li>
-          🚗 Marre de toujours faire le même trajet en voiture ? Demandez un bus
-          ou un train.
-        </li>
-        <li>
-          🚌 Vous prenez les transports en commun, mais ils sont lents,
-          irréguliers et ne passent pas au bon endroit ? Aidez-nous à mieux
-          comprendre vos déplacements d'un point A à un point B.
-        </li>
-        <li>
-          🚲 Fier de sortir le vélo, mais pas satisfait par les infrastructures
-          cyclables ? Signalez votre trajet !
-        </li>
-        <li>
-          Interessé uniquement par vos 📊 statistiques de déplacement ? Pas de
-          problème, rien ne quittera votre téléphone.
-        </li>
-      </ul>
     </p>
+    <ul>
+      <li>
+        🚗 Marre de toujours faire le même trajet en voiture ? Demandez un bus
+        ou un train.
+      </li>
+      <li>
+        🚌 Vous prenez les transports en commun, mais ils sont lents,
+        irréguliers et ne passent pas au bon endroit ? Aidez-nous à mieux
+        comprendre vos déplacements d'un point A à un point B.
+      </li>
+      <li>
+        🚲 Fier de sortir le vélo, mais pas satisfait par les infrastructures
+        cyclables ? Signalez votre trajet !
+      </li>
+      <li>
+        Interessé uniquement par vos 📊 statistiques de déplacement ? Pas de
+        problème, rien ne quittera votre téléphone.
+      </li>
+    </ul>
     <h2>Privée par défaut</h2>
     <p>
       🕵️ Rien ne sort de votre téléphone sans votre accord. Un déplacement

@@ -9,14 +9,14 @@
     "compile": "webpack -c webpack.config.js"
   },
   "dependencies": {
-    "babel-plugin-styled-components": "^1.10.6",
     "fuse.js": "3.4.5",
     "react": "16.11.0",
     "react-dom": "16.11.0",
-    "react-highlight-words": "^0.16.0",
-    "styled-components": "^4.4.1"
+    "react-highlight-words": "^0.16.0"
   },
   "devDependencies": {
+    "babel-plugin-styled-components": "^1.10.6",
+    "styled-components": "^4.4.1",
     "@babel/core": "7.2.0",
     "@babel/preset-env": "^7.7.1",
     "@babel/preset-react": "^7.7.0",
