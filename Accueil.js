@@ -2,14 +2,20 @@ import React from "react";
 
 export default () => (
   <div>
-    <div css="height: 100vh">
+    <div
+      css={`
+        height: 100vh;
+        box-shadow: 0 12px 12px -10px rgba(48, 41, 41, 0.1);
+        background: #6c5ce7;
+      `}
+    >
       <div
         css={`
           color: white;
           text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
           max-width: 860px;
           margin: 0 auto;
-          padding-left: 0.3rem;
+          padding-left: 1rem;
           display: flex;
           align-items: center;
           header,
@@ -17,9 +23,9 @@ export default () => (
             width: 50%;
           }
           h1 {
-            font-size: 400%;
+            font-size: 350%;
             font-weight: 600;
-            margin: 1.6rem 0;
+            margin: 1.2rem 0;
           }
           p {
             font-size: 150%;
@@ -48,8 +54,7 @@ export default () => (
         href="#quoi"
         css={`
           display: block;
-          background: #ffffff4f;
-          border: 3px solid #333;
+          background: white;
           border-radius: 0.3rem;
           width: 7rem;
           text-align: center;
@@ -60,7 +65,7 @@ export default () => (
           color: black;
           text-transform: uppercase;
           font-weight: 600;
-          margin: 1.6rem auto;
+          margin: 1rem auto;
         `}
       >
         Quoi 😲 ?
@@ -74,6 +79,7 @@ let Phone = () => (
   <div
     id="phone"
     css={`
+      transform: scale(0.8);
       #container {
         position: relative;
         display: block;
@@ -240,89 +246,150 @@ let Pourquoi = () => (
   <div
     id="quoi"
     css={`
-      max-width: 50rem;
-      background: white;
+      margin: 0;
       padding: 0.3rem 1rem;
-      border-radius: 1rem;
-      margin: 0 auto;
-      box-shadow: 0 1px 6px rgba(1, 11, 22, 0.77), 0 1px 2px rgba(0, 2, 5, 0.73);
       ul {
         list-style-type: none;
         padding-left: 1rem;
       }
+      em {
+        color: #6c5ce7;
+        font-style: normal;
+      }
+      h2 {
+        font-weight: 600;
+        font-size: 140%;
+        padding-right: 2rem;
+        margin: 3rem 0 1.2rem;
+        line-height: 1.4rem;
+      }
+      .illustration {
+        font-size: 3rem;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+      }
     `}
   >
-    <h2>Reconstruire le service public du transport</h2>
-    <p>Nous sommes au beau milieu de plusieurs crises graves. </p>
-    <ul>
-      <li>
-        📢 la dépendance à la voiture n’a jamais été aussi subie, et
-        l’approvisionnement en essence si incertain.{" "}
-      </li>
-      <li> 🌍 la transition écologique est au point mort.</li>{" "}
-      <li>💨 les villes sont polluées et stressantes.</li>
-    </ul>
+    <h2>
+      C'est <em>la crise</em> !
+    </h2>
+    <span className="illustration">📢</span>
+    <p>
+      La dépendance à la voiture est subie, et l’approvisionnement en essence
+      incertain.
+    </p>
+    <span className="illustration"> 🌍</span>{" "}
+    <p>La transition écologique est au point mort.</p>
+    <span className="illustration">💨</span>
+    <p> Les villes sont polluées et stressantes.</p>
+    <h2>
+      Construire <em>ensemble</em> le futur du transport
+    </h2>
+    <p>Le point commun à tous ces problèmes ? Nos façons de nous déplacer.</p>
+    <p>
+      <strong>Donnez aux collectivité</strong> la chance de mieux comprendre vos
+      déplacements du quotidien, pour que les nouvelles pistes cyclables, lignes
+      de bus, petites lignes de train, nouvelles routes, bornes de recharge
+      électrique, places de stationnement, et l’aménagement urbain en général ne
+      vous laissent plus de côté.
+    </p>
+    <h2>
+      <em>Comment</em> ça marche ?
+    </h2>
+    <p>Installez l'application, et ... rien de plus !</p>{" "}
     <p>
       {" "}
-      Une solution à tous ces problèmes ? Le réseau de transport public n'est
-      pas au niveau et les infrastructures doivent faire leur révolution.
+      Elle enregistre et détecte vos déplacements à pied, en voiture, à vélo, en
+      bus, jour après jour.{" "}
     </p>
     <p>
-      {" "}
-      Aidez les collectivités à mieux comprendre vos déplacements du quotidien,
-      pour que les nouvelles pistes cyclables, lignes de bus, petites lignes de
-      train, nouvelles routes, bornes de recharge électrique, places de
-      stationnement, et l’aménagement urbain en général ne vous laissent plus de
-      côté.
+      🕵️ Privée par défaut, ces données{" "}
+      <strong>ne quittent pas votre téléphone</strong>.
     </p>
-    <h2>Comment ça marche ?</h2>
-    <p>
-      Installez l'application, et vivez votre vie... et rien de plus !
-      Kilomèt.re enregistre et détecte vos déplacements à pied, en voiture, à
-      vélo, en bus, jour après jour,
-      <strong> mais ils ne seront pas partagés</strong>.
-    </p>
-
-    <p>
-      Puis si vous le voulez, partagez de façon totalement anonyme vos données
-      de déplacement.
-    </p>
-    <ul>
-      <li>
-        🚗 Marre de toujours faire le même trajet en voiture ? Demandez un bus
-        ou un train.
-      </li>
-      <li>
+    <p>Puis seulement si vous le voulez, faites un don !</p>
+    <div
+      css={`
+        h3 {
+          margin-bottom: 0;
+          background: #aaa;
+          border-radius: 0.3rem;
+          display: inline-block;
+          color: white;
+          padding: 0 0.4rem;
+          font-size: 100%;
+        }
+      `}
+    >
+      <h2>
+        Faites <em>votre choix</em>
+      </h2>
+      <h3>Niveau 0</h3>
+      <p>Pas de partage</p>
+      <p>
+        📊 Interessé uniquement par vos statistiques de déplacement ? Pas de
+        problème, elles restent au chaud.
+      </p>
+      <h3>Niveau 1</h3>
+      <p>
+        Partage de trajets <strong>anonymes</strong>.
+      </p>
+      <p>🚗 Marre de toujours faire le même trajet en voiture ?</p>
+      <p>
         🚌 Vous prenez les transports en commun, mais ils sont lents,
-        irréguliers et ne passent pas au bon endroit ? Aidez-nous à mieux
-        comprendre vos déplacements d'un point A à un point B.
-      </li>
-      <li>
+        irréguliers et ne passent pas au bon endroit ?
+      </p>
+      <p>
         🚲 Fier de sortir le vélo, mais pas satisfait par les infrastructures
-        cyclables ? Signalez votre trajet !
-      </li>
-      <li>
-        Interessé uniquement par vos 📊 statistiques de déplacement ? Pas de
-        problème, rien ne quittera votre téléphone.
-      </li>
-    </ul>
-    <h2>Privée par défaut</h2>
+        cyclables ?
+      </p>
+      <h3>Niveau 2</h3>
+      <p>
+        Partage en <strong>temps réel</strong>.
+      </p>
+      <p>
+        Il y a de la place dans votre voiture ? Vous rêvez de retrouver la
+        simplicité du stop d'antan, mais avec des garanties ?{" "}
+      </p>
+      <p>
+        L'appli analyse vos déplacements récents et met en contact passgers et
+        conducteurs.
+      </p>
+    </div>
+    <h2>Des questions ?</h2>
+    <h3>Google les a déjà non ?</h3>
     <p>
-      🕵️ Rien ne sort de votre téléphone sans votre accord. Un déplacement
-      particulier vous embarasse ? Pas de souci, effacez-le. Vous êtes le seul à
-      partager vos données dans votre quartier ? Elles resteront au chaud.
+      Tout à fait ! Dès lors que vous avez un téléphone dans votre poche, vous
+      êtes suivis.{" "}
     </p>
     <p>
-      Si je les partage, que ferez-vous de mes données ? Elles seront simplement
-      publiées de façon anonyme.{" "}
+      Vos données sont l'or des GAFA, souvent revendues à d'autres acteurs, dont
+      notamment... les collectivités !
+    </p>{" "}
+    <p>
+      Les données collectées par Kilomètre ne serviront qu'à{" "}
+      <strong>améliorer le transport en France</strong>.
+    </p>
+    <h3>Pourquoi devrais-je vous faire confiance ?</h3>
+    <p>
+      Le code de l'application est entièrement libre, tout le monde peut
+      vérifier qu'elle ne collecte pas les données autorisation.
+    </p>
+    <h3>Et ma batterie 🔋 ? </h3>
+    <p>
+      Les versions récentes d'Android sont bien faites : suivre votre position
+      ne consomme que quelques petits % de batterie par jour.{" "}
+    </p>
+    <p>Si vous constatez le contraire, désinstallez-là en un clic !</p>
+    <h3>Les données collectées seront-elles représentatives ?</h3>
+    <p>
+      Les données collectées ne viendront que compléter les enquêtes actuelles
+      sur la base desquelles les politiques de transport sont construites.
     </p>
     <p>
-      Pourquoi devrais-je vous faire confiance ? Le code de l'application est
-      entièrement libre, tout le monde peut vérifier qu'elle ne collecte pas les
-      données autorisation.
+      Plus de 90% de la population active possède un smartphone. Ces données
+      nous permettront au moins d'améliorer la connaissance des déplacements
+      domicile-travail, qu'on a rarement le choix de faire.
     </p>
-    <h2>Autres questions</h2>
-    <p>L'appli va-t-elle plomber ma batterie ?</p>
-    <p>Données pas représentatives.</p>
   </div>
 );
