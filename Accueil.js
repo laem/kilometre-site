@@ -302,7 +302,7 @@ let Pourquoi = () => (
     </h2>
     <p>Le point commun à tous ces problèmes ? Nos façons de nous déplacer.</p>
     <p>
-      <strong>Donnez aux collectivité</strong> la chance de mieux comprendre vos
+      <strong>Donnez aux collectivités</strong> la chance de mieux comprendre vos
       déplacements du quotidien, pour que les nouvelles pistes cyclables, lignes
       de bus, petites lignes de train, nouvelles routes, bornes de recharge
       électrique, places de stationnement, et l’aménagement urbain en général ne
@@ -366,7 +366,7 @@ let Pourquoi = () => (
         simplicité du stop d'antan, mais avec des garanties ?{" "}
       </p>
       <p>
-        L'appli analyse vos déplacements récents et met en contact passgers et
+        L'appli analyse vos déplacements récents et met en contact passagers et
         conducteurs.
       </p>
     </div>
