@@ -348,23 +348,26 @@ let Pourquoi = () => (
       <p>
         Partage de trajets <strong>anonymes</strong>.
       </p>
-      <p>🚗 Marre de toujours faire le même trajet en voiture ?</p>
+      <p>🚗 Marre de toujours faire le même trajet en voiture sur des axes fréquentés, vous voulez une alternative en commun ?</p>
       <p>
-        🚌 Vous prenez les transports en commun, mais ils sont lents,
-        irréguliers et ne passent pas au bon endroit ?
+        🚌 Vous prenez le bus, mais il est lent,
+        irrégulier et ne passe pas au bon endroit, vous seriez ravi de signaler votre galère de la journée en appuyant sur un bouton ?
       </p>
       <p>
         🚲 Fier de sortir le vélo, mais pas satisfait par les infrastructures
-        cyclables ?
+        cyclables incomplètes ou inexistantes ?
       </p>
+  <p>Balancez vos données et vos demandes aux collectivités, pour leur éviter d'utiliser votre argent pour payer les données de Google, Uber, Strava, TomTom, etc.</p>
       <h3>Niveau 2</h3>
       <p>
         Partage en <strong>temps réel</strong>.
       </p>
       <p>
-        Il y a de la place dans votre voiture ? Vous rêvez de retrouver la
-        simplicité du stop d'antan, mais avec des garanties ?{" "}
+        Il y a de la place dans votre voiture, mais vous n'en pouvez plus de passer 20 minutes chaque chaque soir à se coordonner avec les autres parents ? 
+      </p><p>Vous rêvez de retrouver la
+        simplicité du stop d'antan, mais préferez finir votre café en attendant le conducteur ? {" "}
       </p>
+  <p>Vous voulez co-cycler, tout simplement parce que c'est sympa ? </p>
       <p>
         L'appli analyse vos déplacements récents et met en contact passagers et
         conducteurs.
