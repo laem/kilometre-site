@@ -341,7 +341,8 @@ let Pourquoi = () => (
       <h3>Niveau 0</h3>
       <p>Pas de partage</p>
       <p>
-        📊 Interessé uniquement par vos statistiques de déplacement ? Pas de
+        📊 Interessé uniquement par vos statistiques de déplacement ? 
+  </p><p>✅ Pas de
         problème, elles restent au chaud.
       </p>
       <h3>Niveau 1</h3>
@@ -357,7 +358,7 @@ let Pourquoi = () => (
         🚲 Fier de sortir le vélo, mais pas satisfait par les infrastructures
         cyclables incomplètes ou inexistantes ?
       </p>
-  <p>Balancez vos données et vos demandes aux collectivités, pour leur éviter d'utiliser votre argent pour payer les données de Google, Uber, Strava, TomTom, etc.</p>
+  <p>✅ Balancez vos données et demandes aux collectivités en <strong>en un clic</strong>, pour leur éviter d'utiliser votre argent pour payer les données de Google, Uber, Strava, TomTom...</p>
       <h3>Niveau 2</h3>
       <p>
         Partage en <strong>temps réel</strong>.
@@ -369,8 +370,8 @@ let Pourquoi = () => (
       </p>
   <p>Vous voulez co-cycler, tout simplement parce que c'est sympa ? </p>
       <p>
-        L'appli analyse vos déplacements récents et met en contact passagers et
-        conducteurs.
+        ✅ L'appli analyse vos déplacements récents pour mettre en contact passagers et
+        conducteurs... et rien d'autre !
       </p>
     </div>
     <h2>Des questions ?</h2>
